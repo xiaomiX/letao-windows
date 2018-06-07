@@ -3,13 +3,128 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #fff;
 }
+h1,h2,h3,h4,h5,h6,p,img,ul,li,a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+// 导航栏
 #header {
     background-color: @globalColor;
     height: 45px;
-    >h4 {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    h4 {
         line-height: 45px;
         text-align: center;
         color: #fff;
+        font-weight: 400;
+    }
+    a {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: #fff;
+    }
+}
+// 轮播图
+#slide {
+    padding-top: 45px;
+}
+// 分类导航
+#nav {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .category {
+        width: 33.3%;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// banner
+#banner {
+    padding: 0 10px;
+    a {
+        &:nth-child(2) {
+            width: 32.9%;
+            float: right;
+            img {
+                width: 100%;
+            }
+        }
+        &:nth-child(2n+1) {
+            width: 67.1%;
+            float: left;
+            img {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+}
+// 品牌专区
+#brand {
+    padding: 10px;
+    >img {
+        width: 100%;
+    }
+    ul {
+        li {
+            width: 25%;
+            float: left;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// 运动生活专区
+#sport {
+    padding: 10px;
+    >img {
+        width: 100%;
+    }
+    .box {
+        a {
+            float: left;
+            padding: 5px;
+            width: 50%;
+            .product {
+                padding: 10px;
+                text-align: center;
+                box-shadow: 0 0 5px #ccc;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin-bottom: 10px;
+                    .red {
+                        color: red;
+                    }
+                    .del {
+                        text-decoration-line: line-through;
+                    }
+                }
+            }
+        }  
     }
 }
