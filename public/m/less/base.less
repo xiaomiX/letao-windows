@@ -1,0 +1,74 @@
+@globalColor:#006699;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6,p,img,ul,li,a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+// 导航栏
+#header {
+    background-color: @globalColor;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    h4 {
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+    }
+    input {
+        background-color: #fff;
+        width: 70%;
+        margin: 5px 15%;
+        text-align: left;
+    }
+    .back {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        color: #fff;
+    }
+    .search {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: #fff;
+    }
+}
+
+// 底部
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    background-color: @globalColor;
+    z-index: 20;
+    a {
+        color: #fff;
+        padding-top: 5px;
+        text-align: center;
+        span {
+            display: block;
+        }
+    }
+}

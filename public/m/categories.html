@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minxmum-scale=1.0">
+    <title>分类</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet/less" href="./less/categories.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a class="back fa fa-arrow-left"></a>
+        <input type="search" name="search" id="search" placeholder="请输入商品名称">
+        <a class="search fa fa-search" aria-hidden="true"></a>
+    </header>
+
+    <div id="main">
+        <div class="category">
+            <ul class="category-list">
+                <li><a href="">运动馆</a></li>
+                <li><a href="">女士馆</a></li>
+                <li><a href="">男式馆</a></li>
+                <li><a href="">帆布馆</a></li>
+                <li><a href="">户外馆</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul class="content-list mui-row">
+                        <li class="brand mui-col-xs-4">
+                            <a href="">
+                                <img src="./images/brand1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand mui-col-xs-4">
+                            <a href="">
+                                <img src="./images/brand2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand mui-col-xs-4">
+                            <a href="">
+                                <img src="./images/brand2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand mui-col-xs-4">
+                            <a href="">
+                                <img src="./images/brand2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand mui-col-xs-4">
+                            <a href="">
+                                <img src="./images/brand2.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="mui-row">
+            <a href="#" class="fa fa-home mui-col-xs-3">
+                <span>首页</span>
+            </a>
+            <a href="#" class="fa fa-bars mui-col-xs-3">
+                <span>分类</span>
+            </a>
+            <a href="#" class="fa fa-shopping-cart mui-col-xs-3">
+                <span>购物车</span>
+            </a>
+            <a href="#" class="fa fa-user mui-col-xs-3">
+                <span>会员中心</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/categories.js"></script>
+    <script>
+
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: true, //是否显示滚动条
+            deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    </script>
+</body>
+
+</html>

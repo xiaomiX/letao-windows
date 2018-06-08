@@ -1,47 +1,5 @@
-@globalColor:#006699;
+@import './base.less';
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-h1,h2,h3,h4,h5,h6,p,img,ul,li,a {
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
-ul,ol {
-    list-style: none;
-}
-.fl {
-    float: left;
-}
-.fr {
-    float: right;
-}
-
-// 导航栏
-#header {
-    background-color: @globalColor;
-    height: 45px;
-    width: 100%;
-    position: fixed;
-    z-index: 20;
-    h4 {
-        line-height: 45px;
-        text-align: center;
-        color: #fff;
-        font-weight: 400;
-    }
-    a {
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        color: #fff;
-    }
-}
 // main
 #main {
     padding-top: 45px;
@@ -141,21 +99,5 @@ ul,ol {
                 }
             }
         }  
-    }
-}
-// 底部
-#footer {
-    position: fixed;
-    bottom: 0;
-    height: 45px;
-    width: 100%;
-    background-color: @globalColor;
-    a {
-        color: #fff;
-        padding-top: 5px;
-        text-align: center;
-        span {
-            display: block;
-        }
     }
 }
