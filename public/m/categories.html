@@ -22,54 +22,47 @@
     <div id="main">
         <div class="category">
             <ul class="category-list">
-                <li><a href="">运动馆</a></li>
-                <li><a href="">女士馆</a></li>
-                <li><a href="">男式馆</a></li>
-                <li><a href="">帆布馆</a></li>
-                <li><a href="">户外馆</a></li>
+                
             </ul>
         </div>
+
+<!-- 分类模板start -->
+<script type="text/html" id="category">
+    {{each rows}}
+    <li><a href="javascript:void(0);" data-id="{{$value.id}}">{{$value.categoryName}}</a></li>
+    {{/each}}
+</script>
+<!-- 分类模板end -->
+
         <div class="content">
             <div class="mui-scroll-wrapper">
                 <div class="mui-scroll">
                     <ul class="content-list mui-row">
-                        <li class="brand mui-col-xs-4">
-                            <a href="">
-                                <img src="./images/brand1.png" alt="">
-                            </a>
-                        </li>
-                        <li class="brand mui-col-xs-4">
-                            <a href="">
-                                <img src="./images/brand2.png" alt="">
-                            </a>
-                        </li>
-                        <li class="brand mui-col-xs-4">
-                            <a href="">
-                                <img src="./images/brand2.png" alt="">
-                            </a>
-                        </li>
-                        <li class="brand mui-col-xs-4">
-                            <a href="">
-                                <img src="./images/brand2.png" alt="">
-                            </a>
-                        </li>
-                        <li class="brand mui-col-xs-4">
-                            <a href="">
-                                <img src="./images/brand2.png" alt="">
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
+<!-- 商品内容start -->
+<script type="text/html" id="content">
+    {{each rows}}
+    <li class="brand mui-col-xs-4">
+        <a href="">
+            <img src={{$value.brandLogo}} alt="">
+        </a>
+    </li>
+    {{/each}}
+</script>
+<!-- 商品内容end -->
+
     <footer id="footer">
         <div class="mui-row">
-            <a href="#" class="fa fa-home mui-col-xs-3">
+            <a href="./index.html" class="fa fa-home mui-col-xs-3">
                 <span>首页</span>
             </a>
-            <a href="#" class="fa fa-bars mui-col-xs-3">
+            <a href="./categories.html" class="fa fa-bars mui-col-xs-3">
                 <span>分类</span>
             </a>
             <a href="#" class="fa fa-shopping-cart mui-col-xs-3">
